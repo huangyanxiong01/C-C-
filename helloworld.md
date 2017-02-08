@@ -1,4 +1,8 @@
-使用C++语言编写第一个程序并输出`Hello World`到终端console
+使用C++语言编写第一个程序并输出`Hello World`到终端console，这里使用ubuntu作为开发环境
+## 安装开发开发环境
+```bash
+sudo apt-get install build-essential
+```
 
 ```c++
 /*
