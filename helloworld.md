@@ -37,3 +37,25 @@ g++ -o hello hello.cpp
 $ ./hello
 hello, world
 ```
+- 程序解释
+
+```c++
+#include <iostream>
+using namespace std;
+```
+\#inlcude称为预处理器指令，预处理器指令都是以#开头，在编译前被处理,`#include <iostream>`这个指令告诉预处理器包含`iostream`头文件，支持输入输出操作。`using namespace std;`语句声明std在作为这个程序使用的默认命名空间。名称`cout`和`endl`可在这个程序使用，它门都是在std命名空间下
+
+```c++
+int main() { ... body ... }
+```
+定义名称main的函数，main函数是程序的入口点，该函数必须返回一个int整数的值
+
+```c++
+cout << "hello, world" << endl;
+```
+`cout`表示标准输出(或者是控制台输出)，`<<`符号就称为流插入操作。这里表示放入"hello, world"字符串输出到控制台。`endl`表示结束行或者新的一行，光标会被放到控制台的下一行
+
+```c++
+return 0;
+```
+退出main函数的执行并且返回0给操作系统，通常返回0信号表示正常的退出，非0值表示异常的退出，这一行是可选的，如果没有这一行，C++编译器会在main函数最后一行插入return 0;
