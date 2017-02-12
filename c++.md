@@ -95,6 +95,8 @@ double pi = 3.14159265;
 int firstNumber = 1, secondNumber = 2;
 ```
 
+![BasicsVariable](/assets/BasicsVariable.png)
+
 > 每个变量只可以声明一次，使用变量之前必须被声明，在程序中不能改变变量的类型
 
 
