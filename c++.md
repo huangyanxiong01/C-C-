@@ -100,6 +100,19 @@ int firstNumber = 1, secondNumber = 2;
 > 每个变量只可以声明一次，使用变量之前必须被声明，在程序中不能改变变量的类型
 
 
+## 常量
+常量是不可修改的变量，使用const关键词声明，在程序执行期间都不可变，必须在声明时初始化
+
+```c++
+const double PI = 3.1415926;  // Need to initialize
+```
+>常量的命名必须大写
+
+## 基本数据类型
+
+数据类型有四大类，整形(Integers),字符串(Characters),浮点数(Floating-point Numbers),布尔值(Boolean Numbers)
+
+
 
 
 
