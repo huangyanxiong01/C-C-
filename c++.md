@@ -112,7 +112,8 @@ const double PI = 3.1415926;  // Need to initialize
 
 数据类型有四大类，整形(Integers),字符串(Characters),浮点数(Floating-point Numbers),布尔值(Boolean Numbers)
 
-
+![var-1](/assets/var-1.png)
+![](/assets/var-2.png)
 
 
 
