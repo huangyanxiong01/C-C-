@@ -69,6 +69,8 @@ int main(){
 
 ![Construct_Sequential](/assets/Construct_Sequential.png)
 
+## 什么是变量
+计算机操作的数据，变量存储着程序处理的数据，之所以叫变量因为你可以改变它值
 
 
 
