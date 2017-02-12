@@ -61,12 +61,15 @@ int main(){
     cout <<  "The second Int is " << secondInt << endl;
     return 0;
 }
-### 
 ```
+
+## 什么是程序
 程序是一系列指令（称为编程语句），它们依次执行 - 通常以顺序方式执行，如前面的示例和以下流程图所示。
 
 
 ![Construct_Sequential](/assets/Construct_Sequential.png)
+
+
 
 
 
