@@ -70,8 +70,25 @@ int main(){
 ![Construct_Sequential](/assets/Construct_Sequential.png)
 
 ## 什么是变量
-计算机操作的数据，变量存储着程序处理的数据，之所以叫变量因为你可以改变它值，更确切的说，变量是已命名的存储位置，它存储特定数据类型的值。换句话说，变量有名称，类型，存储着特定数据类型的值
+计算机操作的数据，变量存储着程序处理的数据，之所以叫变量因为你可以改变它值，更确切的说，变量是
+已命名的存储位置，它存储特定数据类型的值。换句话说，变量有名称，类型，存储着特定数据类型的值
 
+
+```
+// 声明变量的类型
+int sum;
+double radius;
+
+// 声明多个同类型的变量
+int sum, difference, product, quotient;
+double area, circumference;
+
+// 声明变量并赋值
+int sum = 0;
+double pi = 3.14159265;
+
+// 声明多个同类型的变量并赋值
+int firstNumber = 1, secondNumber = 2;
 
 
 
