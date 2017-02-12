@@ -76,19 +76,32 @@ int main(){
 
 ```
 // 声明变量的类型
+
 int sum;
 double radius;
 
 // 声明多个同类型的变量
+
 int sum, difference, product, quotient;
 double area, circumference;
 
 // 声明变量并赋值
+
 int sum = 0;
 double pi = 3.14159265;
 
 // 声明多个同类型的变量并赋值
+
 int firstNumber = 1, secondNumber = 2;
+```
+
+> 每个变量只可以声明一次，使用变量之前必须被声明，在程序中不能改变变量的类型
+
+
+
+
+
+
 
 
 
