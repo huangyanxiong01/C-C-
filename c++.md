@@ -113,7 +113,7 @@ const double PI = 3.1415926;  // Need to initialize
 数据类型有四大类，整形(Integers),字符串(Characters),浮点数(Floating-point Numbers),布尔值(Boolean Numbers)
 
 ![var-1](/assets/var-1.png)
-![](/assets/var-2.png)
+![var-2](/assets/var-2.png)
 
 ## 隐式类型转换与显式类型转换
 将值从一种类型转换成另一种类型时叫做类型的转换，转换的方式有两种
