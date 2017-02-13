@@ -121,7 +121,59 @@ const double PI = 3.1415926;  // Need to initialize
 2 利用强制类型转换运算符，将某一类型的数据转换为另外一种类型
 
 
+#### 隐式(自动)类型转换
+假设两种基本类型是兼容的，当你将另一个类型的值赋给其它基础类型变量时，C++编译器自动将值转换为接收到的类型，比如
+- 如果为一个int值赋给double类型的变量，C++编译器会自动将int的值转换为double类型(比如1转为1.0)
+- 如果为一个double值分赋给int变量编译器会自动将double值转换为int值（例如，从1.2到1）并将其赋给int变量，小数部分将被截断，一些编译器发出警告或者错误“精度丢失”;
 
+```c++
+/*
+ * 测试隐式转换 (TestImplicitTypeCast.cpp)
+ */
+#include <iostream>
+#include <iomanip>
+using namespace std;
+ 
+int main() {
+   int i;
+   double d;
+ 
+   // 以小数点后1位的固定格式打印浮点数
+   cout << fixed << setprecision(1);
+ 
+   i = 3;
+   d = i;    // 将int值赋给double类型变量
+   cout << "d = " << d << endl;  // 3.0
+ 
+   d = 5.5;
+   i = d;    // 将double值赋给int类型变量
 
+   cout << "i = " << i << endl;  // 5 (截断，没有警告!)
+ 
+   i = 6.6;  // 将double值赋给int类型变量
+   cout << "i = " << i << endl;  // 6 (截断, 没有警告!)
+}
+```
 
+>如果两种类型不兼容，C++编译器不会自动执行类型转换
+
+#### 显式转换
+可以通过类型转换操作符强制值类型的转换
+
+```c++
+#include <iomanip>
+// 输出单精度的浮点数
+cout << fixed << setprecision(1);
+ 
+cout << (double)5 << endl;  // int 5 → double 5.0
+cout << (int)5.5 << endl;   // double 5.5 → int 5
+ 
+double aDouble = 5.6;
+int anInt = (int)aDouble; // 返回5并赋给anInt，aDouble并没有改变
+ 
+// C++ 支持函数风格的类型转换
+cout << double(5) << endl;     // 5.0
+cout << int(5.5) << endl;      // 5
+cout << int(aDouble) << endl;  // 5
+```
 
