@@ -212,7 +212,7 @@ average = double(sum) / 100;     // 等同于 (double)sum / 100
 下面是一个摄氏与华氏温度转换示例
 ```c++
 /*
- *  摄氏与华氏温度转换 (ConvertTemperature.cpp)
+ *   摄氏与华氏温度转换 (ConvertTemperature.cpp)
  *   Celsius = (5/9)(Fahrenheit–32)
  *   Fahrenheit = (9/5)Celsius+32
  */
@@ -224,6 +224,7 @@ int main() {
    double celsius, fahrenheit;
  
    // Format floating-points in fixed with 2 decimal places
+   // 格式浮点数固定为2个小数位
    cout << fixed << setprecision(2);
  
    cout << "Enter the temperature in celsius: ";
