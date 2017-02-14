@@ -198,3 +198,45 @@ int main() {
    return 0;
 }
 ```
+虽然average是double,但你不会得到小数部分，这是因为sum和100都是int，结果还是int，然后将其隐式转换为double并分配给double类型的average变量，想要获得正确的答案，可以像下面这么做:
+
+```c++
+average = (double)sum / 100;     // 相除之前将sum转换为double
+average = sum / (double)100;     // 相除之前将100转换为double
+average = sum / 100.0;
+average = (double)(sum / 100);   // 这是不正确的
+ 
+// C++ 也支持函数风格类型转换
+average = double(sum) / 100;     // 等同于 (double)sum / 100
+```
+下面是一个摄氏与华氏温度转换示例
+```c++
+/*
+ *  摄氏与华氏温度转换 (ConvertTemperature.cpp)
+ *   Celsius = (5/9)(Fahrenheit–32)
+ *   Fahrenheit = (9/5)Celsius+32
+ */
+#include <iostream>
+#include <iomanip>   // needed for formatting floating-point numbers
+using namespace std;
+ 
+int main() {
+   double celsius, fahrenheit;
+ 
+   // Format floating-points in fixed with 2 decimal places
+   cout << fixed << setprecision(2);
+ 
+   cout << "Enter the temperature in celsius: ";
+   cin >> celsius;
+   fahrenheit = celsius*9/5 + 32;
+   // 9/5*celsius + 32 gives wrong answer! Why?
+   cout << celsius << "C is " << fahrenheit << "F" << endl;
+ 
+   cout << "Enter the temperature in fahrenheit: ";
+   cin >> fahrenheit;
+   celsius =  (fahrenheit - 32)*5/9;
+   // 5/9*(fahrenheit - 32) gives wrong answer! Why?
+   cout << fahrenheit << "F is " << celsius << "C" << endl;
+   return 0;
+}
+```
